@@ -1,0 +1,173 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'fpga_gclk'
+Slack : 0.243
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'e_rxc'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'altera_reserved_tck'
+Slack : 41.031
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fpga_gclk'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'e_rxc'
+Slack : 0.835
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'fpga_gclk'
+Slack : 7.010
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 95.240
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'altera_reserved_tck'
+Slack : 1.191
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'fpga_gclk'
+Slack : 11.459
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'e_rxc'
+Slack : 3.755
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'e_txc'
+Slack : 4.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fpga_gclk'
+Slack : 9.555
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.373
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'e_rxc'
+Slack : 0.272
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'fpga_gclk'
+Slack : 0.515
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : 41.693
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fpga_gclk'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'e_rxc'
+Slack : 0.707
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'fpga_gclk'
+Slack : 7.205
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 95.536
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 1.096
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'fpga_gclk'
+Slack : 11.346
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'e_rxc'
+Slack : 3.659
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'e_txc'
+Slack : 4.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fpga_gclk'
+Slack : 9.556
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.220
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fpga_gclk'
+Slack : 2.405
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'e_rxc'
+Slack : 2.421
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : 46.228
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fpga_gclk'
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'e_rxc'
+Slack : 0.408
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'fpga_gclk'
+Slack : 8.082
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 97.652
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.506
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'fpga_gclk'
+Slack : 11.171
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'e_rxc'
+Slack : 3.197
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'e_txc'
+Slack : 4.000
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fpga_gclk'
+Slack : 9.159
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.281
+TNS   : 0.000
+
+------------------------------------------------------------
