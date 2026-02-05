@@ -65,36 +65,36 @@ Together, they form a **progressive learning path**: from foundational circuit u
 ### System Overview
 The system uses an **Intel Cyclone IV EP4CE10 FPGA** to generate swept-sine signals via **Direct Digital Synthesis (DDS)**, drive the device under test through a **DAC902U**, and capture the response via **ADS807E**. Raw data are streamed over **Gigabit Ethernet (UDP)** to a Python host for real-time Bode plot visualization.
 
-![Hardware System Block Diagram](./picture/%E7%A1%AC%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
+![Hardware System Block Diagram](./picture/硬件系统框图.png)
 
 ### Python GUI Application
 The Python-based host application provides a comprehensive interface for controlling the analyzer and visualizing results:
 
 - **Main Interface - Measurement View**:  
-  ![Python GUI Demo 1](./picture/python%E4%B8%8A%E4%BD%8D%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%BC%94%E7%A4%BA1.png)
+  ![Python GUI Demo 1](./picture/python上位机系统演示1.png)
 
 - **Detailed Analysis - Data Processing**:  
-  ![Python GUI Demo 2](./picture/python%E4%B8%8A%E4%BD%8D%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%BC%94%E7%A4%BA2.png)
+  ![Python GUI Demo 2](./picture/python上位机系统演示2.png)
 
 ### Hardware Design
 Custom PCBs were designed for high-speed mixed-signal performance, including proper power decoupling, ground separation, and impedance-aware routing.
 
 - **Schematic**:  
-  ![Circuit Schematic](./picture/%E7%94%B5%E8%B7%AF%E5%8E%9F%E7%90%86%E5%9B%BE.png)
+  ![Circuit Schematic](./picture/电路原理图.png)
 
 - **PCB Layout (Top Layer)**:  
-  ![Top Assembly](./picture/%E8%A3%85%E9%85%8D%E5%9B%BE%E9%A1%B6%E5%B1%82.png)
+  ![Top Assembly](./picture/装配图顶层.png)
 
 - **PCB Layout (Bottom Layer)**:  
-  ![Bottom Assembly](./picture/%E8%A3%85%E9%85%8D%E5%9B%BE%E5%BA%95%E5%B1%82.png)
+  ![Bottom Assembly](./picture/装配图底层.png)
 
 - **3D Model Preview**:  
-  ![PCB Model](./picture/PCB%E6%A8%A1%E5%9E%8B%E5%9B%BE.png)
+  ![PCB Model](./picture/PCB模型图.png)
 
 ### Real-World Setup
 The complete system in operation, interfacing with a test circuit and host PC:
 
-![Hardware Demonstration](./picture/%E7%A1%AC%E4%BB%B6%E6%90%AD%E8%BD%BD.jpg)
+![Hardware Demonstration](./picture/硬件搭载.jpg)
 
 ---
 
@@ -277,6 +277,11 @@ scipy>=1.6.0       # For signal processing
 
 ---
 
+## 📜 License
+
+License © 2025 Shanghai University Student Team
+
+---
 
 ## 📞 Support
 
