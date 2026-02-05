@@ -277,11 +277,6 @@ scipy>=1.6.0       # For signal processing
 
 ---
 
-## 📜 License
-
-MIT License © 2025 Shanghai University Student Team
-
----
 
 ## 📞 Support
 
