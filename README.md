@@ -8,10 +8,10 @@ This repository contains two complementary projects designed for **undergraduate
 1. **🔬 High-Performance Frequency Response Analyzer (FPGA-based)**  
    A real-time, open-architecture instrument for measuring **amplitude and phase frequency characteristics** of analog circuits (150 Hz – 5 kHz).
 
-2. **🔌 Electric Circuit Exploration Kit (STM32-based)**  
-   A low-cost, hands-on platform for **basic circuit parameter measurement** (DC voltage, DC current, AC voltage) using a custom STM32F4xx multimeter.
+2. **🔌 STM32-based Circuit Measurement System**  
+   A low-cost, hands-on platform for **circuit frequency response measurement** using an STM32F4xx microcontroller, providing fundamental frequency analysis capabilities.
 
-Together, they form a **progressive learning path**: from foundational circuit understanding to advanced frequency-domain analysis.
+Together, they form a **progressive learning path**: from foundational circuit measurement to advanced frequency-domain analysis.
 
 ---
 
@@ -19,7 +19,7 @@ Together, they form a **progressive learning path**: from foundational circuit u
 
 ```
 .
-├── Electric_Circuit_Exploration/           # STM32电路探索套件
+├── Electric_Circuit_Exploration/           # STM32电路测量系统
 │   ├── DianSai111/                        # 电赛相关文件
 │   ├── doc/                               # 文档
 │   ├── logic_test/                        # 逻辑测试
@@ -98,12 +98,22 @@ The complete system in operation, interfacing with a test circuit and host PC:
 
 ---
 
-## 🔌 2. STM32 Electric Circuit Exploration Kit
+## 🔌 2. STM32-based Circuit Measurement System
 
-A compact multimeter based on **STM32F4xx**, housed in its own PCB, enabling students to explore Ohm's law, KVL/KCL, and basic AC behavior through direct measurement of:
-- DC Voltage (0–20 V)
-- DC Current (0–100 mA)
-- AC Voltage (RMS, 50 Hz – 1 kHz)
+A comprehensive circuit analysis platform based on **STM32F4xx microcontroller**, designed for fundamental frequency response measurements. This system provides an accessible entry point for students to understand circuit analysis principles before advancing to the more sophisticated FPGA-based analyzer.
+
+### Key Features:
+- **Signal Generation**: Programmable waveform generation via DAC
+- **Data Acquisition**: High-precision ADC sampling
+- **Frequency Analysis**: Embedded FFT processing capabilities
+- **Real-time Display**: On-board or PC-based visualization
+- **Educational Focus**: Simplified interface for learning circuit analysis
+
+### Measurement Capabilities:
+- **Frequency Response**: Amplitude and phase measurement across frequency bands
+- **Impedance Analysis**: Basic circuit impedance characterization
+- **Transfer Function**: System transfer function estimation
+- **Time-domain Analysis**: Waveform capture and analysis
 
 > Full design files and firmware are in the [`Electric_Circuit_Exploration/`](Electric_Circuit_Exploration/) folder.
 
@@ -160,7 +170,7 @@ The Python application includes:
 - **Signal Analysis**: FFT analysis and time-domain signal view
 - **Filter Design**: Built-in filter synthesis tools
 
-### STM32 Circuit Exploration Kit
+### STM32 Circuit Measurement System
 
 ```bash
 # Navigate to STM32 project
@@ -170,6 +180,7 @@ cd Electric_Circuit_Exploration
 # 1. Open mcu_code/ directory in your IDE
 # 2. Build and flash to STM32 board
 # 3. Connect measurement probes to test circuits
+# 4. Use serial terminal or custom GUI to control measurements
 ```
 
 ---
@@ -226,12 +237,13 @@ scipy>=1.6.0       # For signal processing
 ### STM32 Project
 - `Electric_Circuit_Exploration/mcu_code/` - STM32 firmware source code
 - `Electric_Circuit_Exploration/vivado/` - FPGA verification files
+- `Electric_Circuit_Exploration/doc/` - Documentation and user guides
 
 ---
 
 ## 📈 Measurement Specifications
 
-### FPGA Analyzer
+### FPGA Analyzer (Advanced System)
 - **Frequency Range**: 150 Hz – 5 kHz
 - **Signal Generation**: 16-bit DDS with programmable frequency
 - **Data Acquisition**: 16-bit ADC @ 40 MSPS
@@ -239,36 +251,45 @@ scipy>=1.6.0       # For signal processing
 - **Real-time Display**: Amplitude & Phase Bode plots
 - **GUI Features**: Real-time plotting, data export, filter design tools
 
-### STM32 Exploration Kit
-- **DC Voltage**: 0–20 V (±0.5% accuracy)
-- **DC Current**: 0–100 mA (±1% accuracy)
-- **AC Voltage**: 50 Hz – 1 kHz (RMS measurement)
-- **Display**: OLED or LCD interface
+### STM32 Measurement System (Entry-level)
+- **Frequency Range**: 1 Hz – 10 kHz (typical)
+- **Signal Generation**: 12-bit DAC with waveform synthesis
+- **Data Acquisition**: 12-bit ADC with configurable sampling
+- **Processing**: On-chip FFT and digital signal processing
+- **Communication**: USB/UART interface for PC connectivity
+- **Display**: Embedded display or PC-based visualization
 
 ---
 
 ## 🎓 Educational Applications
 
-### Classroom Exercises
-1. **Basic Circuit Analysis**: Use STM32 kit to verify Ohm's Law
-2. **Filter Characterization**: Measure RC/LC filter responses with FPGA analyzer
-3. **System Identification**: Identify unknown circuit transfer functions
-4. **Noise Analysis**: Study signal-to-noise ratio in measurement systems
-5. **GUI Development**: Learn Python GUI programming with real hardware
+### Learning Progression
+
+#### Level 1: STM32 System (Fundamentals)
+1. **Basic Circuit Analysis**: Measure passive filter responses
+2. **Signal Processing**: Understand sampling, aliasing, and FFT basics
+3. **System Identification**: Characterize simple circuit transfer functions
+4. **Embedded Programming**: Learn real-time measurement techniques
+
+#### Level 2: FPGA System (Advanced)
+1. **High-Speed Measurement**: Explore high-frequency circuit behavior
+2. **Precision Analysis**: Understand quantization and noise effects
+3. **Networked Instrumentation**: Learn distributed measurement systems
+4. **Professional Tools**: Use industry-standard analysis techniques
 
 ### Laboratory Projects
-- Design and test active/passive filters
-- Characterize amplifier frequency responses
-- Implement digital filter algorithms in MATLAB
-- Compare simulated vs. measured results
-- Develop custom measurement algorithms in Python
+- Design and characterize RC/LC filters with both systems
+- Compare microcontroller vs. FPGA measurement approaches
+- Implement adaptive filter algorithms
+- Develop custom measurement protocols
+- Analyze measurement accuracy and limitations
 
 ---
 
 ## 👥 Team
 
 - **Huo Shengyu**  – FPGA architecture, UDP stack  
-- **Shen Wenbo** – Python GUI, signal processing,FPGA architecture
+- **Shen Wenbo** – Python GUI, signal processing，FPGA architecture
 - **Gao Yutao** – STM32 firmware, analog front-end  
 - **He Yilin** – PCB design, MATLAB simulation  
 
