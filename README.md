@@ -289,9 +289,9 @@ scipy>=1.6.0       # For signal processing
 ## 👥 Team
 
 - **Huo Shengyu**  – FPGA architecture, UDP stack  
-- **Shen Wenbo** – Python GUI, signal processing，FPGA architecture
+- **Shen Wenbo** – Python GUI, signal processing，FPGA architecture，PCB design
 - **Gao Yutao** – STM32 firmware, analog front-end  
-- **He Yilin** – PCB design, MATLAB simulation  
+- **He Yilin** – FPGA architecture
 
 **Supervisor**: Prof. Zhang Shaojun  
 **Institution**: School of Communication and Electronic Engineering, Shanghai University
